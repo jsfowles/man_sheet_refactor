@@ -26,7 +26,7 @@ post '/main_menu' do
   if message.to_i == 1
     redirect '/mans'
   elsif message.to_i == 2
-    redirect 'https://www.google.com'
+    redirect 'https://www.github.com/0nn0/terminal-mac-cheatsheet'
   else
     redirect '/main_menu'
   end
@@ -42,9 +42,9 @@ post '/mans' do
   elsif @mans.to_i == 3
     redirect '/cd'
   elsif @mans.to_i == 4
-    redirect '/main_menu'
+    redirect '/https://www.github.com/0nn0/terminal-mac-cheatsheet'
   else
-    redirect '/mans'
+    redirect '/main_menu'
   end
   erb :mans
 end
