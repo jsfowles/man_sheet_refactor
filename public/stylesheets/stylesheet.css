@@ -2,10 +2,18 @@ body {
   background-color: gray;
   color: white;
   font-family: firasans-four;
-  font-size: 30px;
+  font-size: 20px;
+  margin-left: 200px;
+  margin-top: 50px;
+  width: 60em;
 }
 
 .maindiv
 {
   font-size: 18px;
+}
+
+#id{
+  font_font-family: arial;
+  font-size: 60px;
 }

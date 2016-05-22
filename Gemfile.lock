@@ -24,7 +24,7 @@ PLATFORMS
 
 DEPENDENCIES
   pry (~> 0.10.3)
-  shotgun
+  shotgun (~> 0.9.1)
   sinatra (~> 1.4.7)
 
 RUBY VERSION
