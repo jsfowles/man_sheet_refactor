@@ -58,3 +58,8 @@ post '/search' do
   @search = params[:message]
   erb :search
 end
+
+not_found do
+  status 404
+  'not found'
+end
