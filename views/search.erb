@@ -1,0 +1,15 @@
+
+<div class='maindiv' id='terminal'>
+  <div>
+    <p><a href='/main_menu'>Main Menu</a><span> </span><a href='/mans'>Cheatsheet</a></p>
+  </div>
+  <p class='heading'>Search for any Terminal Manual</p>
+</div>
+
+<div>
+  <form action='/search' method='post'>
+    <input type='text' name= 'message'>
+    <input type='submit'/>
+  </form>
+<%= `man #{@search}` %>
+</div>

@@ -21,30 +21,40 @@ get '/cd' do
   erb :cd
 end
 
+get '/search' do
+  erb :search
+end
+
 post '/main_menu' do
-  message = params[:message]
-  if message.to_i == 1
-    redirect '/mans'
-  elsif message.to_i == 2
-    redirect 'https://www.github.com/0nn0/terminal-mac-cheatsheet'
-  else
-    redirect '/main_menu'
-  end
-  erb :main_menu
+
+ #@message = params[:message]
+ # if @message.to_i == 1
+ #   redirect '/mans'
+ # elsif @message
+ #   redirect '/search'
+ # else
+ #   redirect '/main_menu'
+ # end
+ erb :main_menu
 end
 
 post '/mans' do
-  @mans = params[:selection]
-  if @mans.to_i == 1
-    redirect '/cp'
-  elsif @mans.to_i == 2
-    redirect '/mv'
-  elsif @mans.to_i == 3
-    redirect '/cd'
-  elsif @mans.to_i == 4
-    redirect '/https://www.github.com/0nn0/terminal-mac-cheatsheet'
-  else
-    redirect '/main_menu'
-  end
+  # @mans = params[:message]
+  # if @mans.to_i == 1
+  #   redirect '/cp'
+  # elsif @mans.to_i == 2
+  #   redirect '/mv'
+  # elsif @mans.to_i == 3
+  #   redirect '/cd'
+  # elsif @mans.to_i == 4
+  #   redirect '/https://www.github.com/0nn0/terminal-mac-cheatsheet'
+  # else
+  #   redirect '/main_menu'
+  # end
   erb :mans
+end
+
+post '/search' do
+  @search = params[:message]
+  erb :search
 end
